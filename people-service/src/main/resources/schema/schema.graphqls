@@ -1,0 +1,10 @@
+type Query {
+  people(id: Int): [Person]
+  person(id: Int): Person
+}
+
+type Person @key(fields: "id")  {
+  id: Int!
+  givenName: String
+  familyName: String
+}
